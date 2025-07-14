@@ -884,18 +884,15 @@ async function handleAIQuery(api, event, body, threadID, messageID) {
 function handleContact(api, threadID, messageID) {
     const contactContent = `🧑‍💻 LEAD DEVELOPER
    Joshua Apostol
-   📧 joshuaapostol909@gmail.com
-   📱 fb.com/joshuaapostol2006
-   💻 github.com/joshuaApos
 
 👨‍💻 CO-LEAD DEVELOPER  
    Cyril Encenso
-   📧 Amigohaycyril10@gmail.com
-   📱 fb.com/cyypookie
-   💻 github.com/atsushinakajima14
+   
 
-🌐 PORTFOLIO
-   joshua-portfolio.com
+👨‍💻 BOT OWNER
+   justine sy
+   📱 fb.com/justine.syxd
+
 
 💬 Support & Inquiries Welcome!`;
 
@@ -1320,7 +1317,7 @@ function handlePrefix(api, threadID, prefix) {
 
 function handleOut(api, event, threadID, messageID, isAdmin) {
     if (isAdmin) {
-        api.sendMessage("👋 Goodbye! The bot is leaving this group.", threadID, () => {
+        api.sendMessage("👋 Goodbye! The bot is leaving this group. Message the owner.", threadID, () => {
             api.removeUserFromGroup(api.getCurrentUserID(), threadID);
         }, messageID);
     } else {
