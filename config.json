@@ -1,6 +1,6 @@
 {
-  "prefix": "!",
-  "adminUID": ["61577257754062"],
+  "prefix": "/",
+  "adminUID": ["100015122384760"],
   "version": "2.4.2",
   "autoReact": true,
   "smartCommands": true,
